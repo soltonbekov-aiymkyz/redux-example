@@ -23,6 +23,12 @@ const counterReducer = (state = initialState, action) => {
           const newState4 = { ...state };
           newState4.number = 10;
           return newState4;
+
+
+          case 'INCREMENT_By_5':
+            const newState5 = { ...state };
+            newState5.number = 20;
+            return newState5;
   }
   return state;
 }
