@@ -38,6 +38,12 @@ const counterReducer = (state = initialState, action) => {
               return newState100;
   
   
+              case 'INCREMENT_BY_0':
+                const newState0 = { ...state };
+                newState0.number = random;
+                return newState0;
+    
+    
   
 
 

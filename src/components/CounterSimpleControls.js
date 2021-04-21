@@ -29,6 +29,13 @@ const CounterSimpleControls = () => {
 
 
 
+  function incrementBy0Callback() {
+    dispatch({ type: "increment_by_0" });
+  }
+  function decrementBy0Callback() {
+    dispatch({ type: "decrement_by_0" });
+  }
+
 
 
 
@@ -43,8 +50,14 @@ const CounterSimpleControls = () => {
       <button onClick={decrementBy10Callback}>-10</button>
     
    
-      <button onClick={incrementBy100Callback}>+100</button>
+  <button onClick={incrementBy100Callback}>+100</button>
       <button onClick={decrementBy100Callback}>-100</button>
+    
+
+
+   
+      <button onClick={incrementBy0Callback}>random</button>
+      <button onClick={decrementBy0Callback}>random</button>
     
 
 

@@ -21,7 +21,11 @@ const counterReducer = (state = initialState, action) => {
         case "decrement_by_100":
             return { ...state, number: state.number - 100 }
 
-
+            case "increment_by_0":
+                return { ...state, number: Math.floor(Math.random() * 101)  }
+            case "decrement_by_0":
+                return { ...state, number: Math.floor(Math.random() * 101)        }
+    
     }
 return state;
 }
