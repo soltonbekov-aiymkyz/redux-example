@@ -8,14 +8,23 @@ const counterReducer = (state = initialState, action) => {
             return { ...state, number: state.number + 1 }
         case "decrement_by_1":
             return { ...state, number: state.number - 1 }
+        case "increment_by_5":
+            return { ...state, number: state.number *= 2 }
+        case "decrement_by_5":
+            return { ...state, number: state.number /= 2 }
+        case "increment_by_10":
+            return { ...state, number: state.number + 10 }
+        case "decrement_by_10":
+            return { ...state, number: state.number - 10 }
+        case "increment_by_100":
+            return { ...state, number: state.number + 100 }
+        case "decrement_by_100":
+            return { ...state, number: state.number - 100 }
 
 
-
-            case "increment_by_5":
-                return { ...state, number: state.number * 1 }
-            case "decrement_by_5":
-                return { ...state, number: state.number / 1 }
     }
-    return state;
+return state;
 }
 export default counterReducer;
+
+
