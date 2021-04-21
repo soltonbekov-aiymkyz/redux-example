@@ -8,11 +8,13 @@ const IncericeSimple = () => {
   function decrementBy5Callback() {
     dispatch({ type: "decrement_by_5" });
   }
+
   return (
     <div>
-      <button onClick={incrementBy5Callback}>*1</button>
-      <button onClick={decrementBy5Callback}>:1</button>
+      <button onClick={incrementBy5Callback}>*2</button>
+      <button onClick={decrementBy5Callback}>:2</button>
+    
     </div>
   );
 };
-export default InceriseSimple;
+export default IncericeSimple;
