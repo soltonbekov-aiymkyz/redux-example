@@ -25,10 +25,24 @@ const counterReducer = (state = initialState, action) => {
           return newState4;
 
 
-          case 'INCREMENT_By_5':
+          case 'INCREMENT_BY_5':
             const newState5 = { ...state };
             newState5.number = 20;
             return newState5;
+
+
+
+            case 'INCREMENT_BY_100':
+              const newState100 = { ...state };
+              newState5.number = 100;
+              return newState100;
+  
+  
+  
+
+
+
+
   }
   return state;
 }
@@ -44,4 +58,6 @@ store.dispatch(newAction);
 store.dispatch({ type: "DECREMENT" });
 store.dispatch({ type: "INCREMENT_BY_10" });
 
+
+// store.dispatch({ type: "INCREMENT_BY_100" });
 
