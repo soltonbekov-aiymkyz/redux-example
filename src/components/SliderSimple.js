@@ -25,11 +25,10 @@
 
 
 
-import { useDispatch, useSelector } from "react-redux";
 
+import { useDispatch, useSelector } from "react-redux";
 const SliderSimple = () => {
   const dispatch = useDispatch();
-
   function changeSliderCallBack({ target}){
     dispatch({type: "change_slider", color: target.value})
   }
@@ -42,3 +41,5 @@ const SliderSimple = () => {
   );
 }
 export default SliderSimple;
+
+

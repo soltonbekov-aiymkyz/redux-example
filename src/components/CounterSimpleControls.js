@@ -36,26 +36,17 @@ const CounterSimpleControls = () => {
     dispatch({ type: "decrement_by_0" });
   }
 
-
-
-
   return (
     <div>
       <button onClick={incrementBy1Callback}>+1</button>
       <button onClick={decrementBy1Callback}>-1</button>
 
-
-
       <button onClick={incrementBy10Callback}>+10</button>
       <button onClick={decrementBy10Callback}>-10</button>
     
-   
   <button onClick={incrementBy100Callback}>+100</button>
       <button onClick={decrementBy100Callback}>-100</button>
     
-
-
-   
       <button onClick={incrementBy0Callback}>random</button>
       <button onClick={decrementBy0Callback}>random</button>
     
