@@ -1,26 +1,18 @@
-// import { useSelector } from "react-redux";
-// const TextDisplay = () => {
-//     const text = useSelector(
-//         store => store.text.text
-//         );
-//     return ( 
-//         <div>
-//         <h2>Text display</h2>
-//         {text}
-//         </div>
-//     );
-// }
-// export default TextDisplay;
-import { useSelector } from "react-redux";
 
+import { useSelector } from "react-redux";
 const TextDisplay = () => {
     const text = useSelector(store => store.text.text)
+    const size = useSelector(store => store.text.size)
+    const color = useSelector(store => store.color.color)
     
+    const style = {
+        fontSize: `${size}px`,
+        color: `${color}`
+    };
     return ( 
         <div>
-            {text}
+            <p style={style}>{text}</p>
         </div>
     );
 }
- 
 export default TextDisplay;
