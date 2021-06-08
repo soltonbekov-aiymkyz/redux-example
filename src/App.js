@@ -9,6 +9,16 @@ import SliderControls from './components/SliderControls';
 import TextDisplay from './components/TextDisplay';
 import TextSimpleControls from './components/TextSimpleControls';
 
+
+
+import AiymDisplay from './components/AiymDisplay';
+import AiymSimple from './components/AiymSimple';
+
+
+
+
+
+
 function App() {
   return (
     <div className="App">
@@ -27,6 +37,10 @@ function App() {
         <CounterAdvancedControls />
       </div>
 
+      <div>
+        <AiymDisplay />
+        <AiymSimple />
+      </div>
 
 
 
